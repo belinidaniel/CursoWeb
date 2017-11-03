@@ -4,7 +4,7 @@
 	using System.Collections.Generic;
 	using System.Xml.Serialization;
 
-	public class Curso : IImprimir
+	public class Curso
 	{
 		public int GeralAp
 		{
@@ -62,17 +62,8 @@
 
 		public Periodo P { get; internal set; }
 
-		[XmlArray("Periodo"), XmlArrayItem("Periodo")]
+		[XmlArrayItem("Periodo")]
 		public List<Periodo> Periodos { get; set; }
 
-		public void Imprimir()
-		{
-			Console.WriteLine(this.Nome);
-			Console.WriteLine("---------------------------------------------------------------------------");
-			foreach (var p in this.Periodos) p.Imprimir();
-			Console.WriteLine(
-				"Total:                  |" + this.GeralAt + " |  " + this.GeralAp + " |  " + this.Geralcred + " |  " + this.GeralHa
-				+ " |  " + this.GeralHr);
-		}
 	}
 }

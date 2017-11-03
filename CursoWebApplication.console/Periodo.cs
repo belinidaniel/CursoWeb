@@ -6,7 +6,7 @@
 
 	public class Periodo : IImprimir
 	{
-		[XmlArray("disciplina"), XmlArrayItem("disciplina")]
+		[XmlArrayItem("disciplina")]
 		public List<Disciplina> Disciplinas;
 
 		[XmlElement("numero")]

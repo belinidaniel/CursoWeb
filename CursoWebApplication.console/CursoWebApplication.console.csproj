@@ -46,12 +46,8 @@
     <Compile Include="Curso.cs" />
     <Compile Include="Disciplina.cs" />
     <Compile Include="Exceptions\CursoException\CursoException.cs" />
-    <Compile Include="IImprimir.cs" />
-    <Compile Include="MainClass.cs" />
     <Compile Include="Periodo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Xmlmetodos\ExportarXML.cs" />
-    <Compile Include="Xmlmetodos\LerSalvarXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
